@@ -35,7 +35,7 @@ all: objFolder $(PROJ_NAME)
 light: $(CPP_SOURCE) $(MAIN_SOURCE)
 	@ echo ' '
 	@ echo 'Building binary using g++ linker: $(PROJ_NAME)'
-	$(CC) $^ -g -o $(PROJ_NAME)
+	$(CC) $^ -g -o $(PROJ_NAME) -lsfml-graphics -lsfml-window -lsfml-system
 	@ echo 'Finished building binary: $(PROJ_NAME)'
 	@ echo ' '
 
